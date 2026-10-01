@@ -1,53 +1,38 @@
-# 🛍️ PrimePicks Store
+# 🌐 PrimePicks Store
 
-> A sua curadoria premium com os melhores produtos, ofertas exclusivas e recomendações de alta qualidade.
-
-![PrimePicks Store Banner](https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=1200&q=80)
-
-## 🚀 Sobre o Projeto
-
-**PrimePicks Store** é uma plataforma e-commerce moderna, leve e responsiva construída com HTML5 semântico, CSS3 moderno (Glassmorphism, CSS Custom Properties e animações fluídas) e Vanilla JavaScript estruturado.
-
-### ✨ Principais Funcionalidades
-
-- 💎 **Curadoria Selecionada (Prime Picks)**: Catálogo organizado por categorias (Tecnologia, Casa & Conforto, Fitness, Estilo e Acessórios).
-- 🔍 **Busca & Filtros em Tempo Real**: Filtre por categoria, faixa de preço, avaliação ou busque instantaneamente por palavra-chave.
-- 🛒 **Carrinho de Compras Interativo**: Gaveta lateral de carrinho com persistência em `localStorage`, cálculo dinâmico de frete, cupom de desconto e totais.
-- 👁️ **Modal de Pré-Visualização Rápida (Quick View)**: Detalhes do produto, galeria de especificações e botão direto de compra.
-- 🌓 **Tema Claro & Escuro (Dark/Light Mode)**: Alternância suave com memória de preferência do usuário.
-- 📱 **100% Responsivo & Mobile First**: Layout adaptável para smartphones, tablets e desktops com microinterações refinadas.
-- ⚡ **Performance & SEO Otimizado**: Sem dependências pesadas, carregamento ultrarrápido e tags semânticas completas.
+Repositório de páginas estáticas independentes para produtos de afiliado, publicado e otimizado para **Cloudflare Pages**.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📁 Estrutura do Projeto
 
-- **HTML5**: Estrutura semântica e acessível
-- **CSS3**: Variáveis customizadas, Flexbox, Grid, Glassmorphism e animações CSS
-- **JavaScript (ES6+)**: Lógica reativa, manipulação do DOM e LocalStorage
-- **Google Fonts & Lucide Icons**: Tipografia moderna (*Plus Jakarta Sans*) e ícones vetoriais elegantes
+O projeto é estruturado de forma que cada produto possua sua própria pasta isolada com ativos dedicados (CSS, JavaScript e imagens), acessível diretamente pelo seu respectivo caminho de rota:
 
----
-
-## 📦 Como Rodar Localmente
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/edsonhirama/primepicksstore.git
+```text
+primepicksstore/
+├── index.html                   # Página inicial simples da raiz
+├── .gitignore                   # Arquivos ignorados pelo Git
+├── LICENSE                      # Licença MIT
+├── README.md                    # Documentação do projeto
+└── derila-ergo/                 # Página do produto Derila Ergo (/derila-ergo/)
+    ├── index.html               # Estrutura HTML da página
+    └── assets/
+        ├── css/
+        │   └── style.css        # Estilos específicos da página
+        ├── js/
+        │   └── main.js          # Scripts específicos da página
+        └── images/              # Imagens e mídia do produto
 ```
 
-2. Acesse a pasta do projeto:
-```bash
-cd primepicksstore
-```
-
-3. Abra o arquivo `index.html` em seu navegador ou utilize a extensão **Live Server** no VS Code / Antigravity.
-
 ---
 
-## 📄 Licença
+## 🚀 Publicação no Cloudflare Pages
 
-Este projeto está sob a licença [MIT](LICENSE).
-
----
-*Desenvolvido com excelência por [@edsonhirama](https://github.com/edsonhirama).*
+1. Conecte este repositório do GitHub ao **Cloudflare Pages**.
+2. Configurações de Build:
+   - **Framework preset**: None (HTML estático)
+   - **Build command**: *(deixar em branco)*
+   - **Build output directory**: `.` (ou `/`)
+3. As páginas estarão disponíveis nas rotas:
+   - Raiz: `https://seu-dominio.pages.dev/`
+   - Derila Ergo: `https://seu-dominio.pages.dev/derila-ergo/`

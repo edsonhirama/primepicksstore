@@ -33,6 +33,6 @@ primepicksstore/
    - **Framework preset**: None (HTML estático)
    - **Build command**: *(deixar em branco)*
    - **Build output directory**: `.` (ou `/`)
-3. As páginas estarão disponíveis nas rotas:
-   - Raiz: `https://seu-dominio.pages.dev/`
-   - Derila Ergo: `https://seu-dominio.pages.dev/derila-ergo/`
+3. As páginas estão disponíveis nas rotas:
+   - Raiz: `https://primepicksstore.store/`
+   - Derila Ergo: `https://primepicksstore.store/derila-ergo/`

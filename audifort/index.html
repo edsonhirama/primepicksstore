@@ -52,21 +52,21 @@
     .site-wrapper {
       max-width: 680px;
       margin: 0 auto;
-      padding: 0 1rem;
+      padding: 0 0.85rem;
     }
 
     /* Minimal Editorial Header */
     .site-header {
-      padding: 0.65rem 0;
+      padding: 0.35rem 0;
       border-bottom: 1px solid var(--border-color);
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.45rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     .site-brand {
-      font-size: 0.95rem;
+      font-size: 0.85rem;
       font-weight: 700;
       color: var(--text-main);
       letter-spacing: -0.01em;
@@ -74,25 +74,25 @@
     }
 
     .badge-report {
-      font-size: 0.72rem;
+      font-size: 0.65rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.04em;
       color: #b91c1c;
       background-color: #fef2f2;
-      padding: 0.2rem 0.55rem;
+      padding: 0.15rem 0.45rem;
       border-radius: 9999px;
       border: 1px solid #fecaca;
     }
 
     /* Article Meta */
     .article-meta {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       color: var(--text-light);
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.35rem;
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.4rem;
       flex-wrap: wrap;
     }
 
@@ -100,46 +100,46 @@
     .advertorial-article {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     /* Main Curiosity Headline (H1) */
     .headline-h1 {
-      font-size: 1.28rem;
+      font-size: 1.12rem;
       font-weight: 800;
-      line-height: 1.25;
+      line-height: 1.22;
       color: #111827;
       letter-spacing: -0.02em;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.35rem;
     }
 
-    /* Hero Image */
+    /* Hero Image (Ultra-Compact on Mobile) */
     .hero-image-wrapper {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 0.85rem;
+      margin-bottom: 0.4rem;
     }
 
     .hero-image {
       width: 100%;
-      max-width: 140px;
+      max-width: 80px;
       height: auto;
       display: block;
       object-fit: contain;
-      filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08));
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
     }
 
     /* Editorial Body Paragraphs */
     .article-body {
-      font-size: 0.95rem;
+      font-size: 0.88rem;
       color: var(--text-main);
-      line-height: 1.55;
-      margin-bottom: 1.25rem;
+      line-height: 1.42;
+      margin-bottom: 0.75rem;
     }
 
     .article-body p {
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.4rem;
     }
 
     .article-body p:last-child {
@@ -151,8 +151,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 0.25rem;
-      margin-bottom: 1rem;
+      margin-top: 0.2rem;
+      margin-bottom: 0.75rem;
     }
 
     .btn-cta {
@@ -163,15 +163,15 @@
       text-align: center;
       background: linear-gradient(180deg, #16a34a 0%, #15803d 100%);
       color: #ffffff;
-      font-size: 1.05rem;
+      font-size: 0.95rem;
       font-weight: 800;
-      padding: 0.95rem 1.15rem;
+      padding: 0.85rem 0.95rem;
       border-radius: 8px;
       text-decoration: none;
       box-shadow: var(--btn-shadow);
       transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
       cursor: pointer;
-      line-height: 1.3;
+      line-height: 1.25;
       border: 1px solid #15803d;
       animation: cta-subtle-pulse 2.2s infinite ease-in-out;
     }
@@ -203,9 +203,9 @@
     }
 
     .cta-subtext {
-      font-size: 0.78rem;
+      font-size: 0.72rem;
       color: var(--text-light);
-      margin-top: 0.45rem;
+      margin-top: 0.35rem;
       text-align: center;
     }
 
@@ -240,6 +240,10 @@
 
     /* Desktop View Adjustments */
     @media (min-width: 768px) {
+      .site-wrapper {
+        padding: 0 1rem;
+      }
+
       .site-header {
         padding: 1rem 0;
         margin-bottom: 1.5rem;
@@ -249,14 +253,34 @@
         font-size: 1.1rem;
       }
 
+      .badge-report {
+        font-size: 0.72rem;
+        padding: 0.2rem 0.55rem;
+      }
+
+      .article-meta {
+        font-size: 0.78rem;
+        margin-bottom: 0.75rem;
+        gap: 0.5rem;
+      }
+
+      .advertorial-article {
+        margin-bottom: 1.5rem;
+      }
+
       .headline-h1 {
         font-size: 1.75rem;
         line-height: 1.3;
         margin-bottom: 1rem;
       }
 
+      .hero-image-wrapper {
+        margin-bottom: 0.85rem;
+      }
+
       .hero-image {
         max-width: 175px;
+        filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08));
       }
 
       .article-body {
@@ -269,9 +293,20 @@
         margin-bottom: 1rem;
       }
 
+      .cta-container {
+        margin-top: 0.25rem;
+        margin-bottom: 1rem;
+      }
+
       .btn-cta {
         font-size: 1.15rem;
         padding: 1.1rem 1.75rem;
+        line-height: 1.3;
+      }
+
+      .cta-subtext {
+        font-size: 0.78rem;
+        margin-top: 0.45rem;
       }
     }
   </style>

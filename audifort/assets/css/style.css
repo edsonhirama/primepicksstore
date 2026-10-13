@@ -72,7 +72,7 @@ body {
 .article-meta {
   font-size: 0.72rem;
   color: var(--text-light);
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.25rem;
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -83,7 +83,7 @@ body {
 .advertorial-article {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 /* Main Curiosity Headline (H1) */
@@ -93,36 +93,36 @@ body {
   line-height: 1.22;
   color: #111827;
   letter-spacing: -0.02em;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.2rem;
 }
 
-/* Hero Image (Ultra-Compact on Mobile) */
+/* Hero Image */
 .hero-image-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .hero-image {
   width: 100%;
-  max-width: 80px;
+  max-width: 130px;
   height: auto;
   display: block;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.08));
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.09));
 }
 
 /* Editorial Body Paragraphs */
 .article-body {
   font-size: 0.88rem;
   color: var(--text-main);
-  line-height: 1.42;
-  margin-bottom: 0.75rem;
+  line-height: 1.4;
+  margin-bottom: 0.65rem;
 }
 
 .article-body p {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .article-body p:last-child {
@@ -134,8 +134,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 0.2rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.15rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-cta {
